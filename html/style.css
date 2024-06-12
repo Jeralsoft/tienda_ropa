@@ -1,0 +1,162 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: rgb(192, 54, 17); /* Rojo ladrillo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del header y menú */
+header {
+    background-color: #969696; /* Gris medio */
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(192, 54, 17); /* Rojo ladrillo */
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #fff; /* Blanco */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #969696; /* Gris medio */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    width: 200px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* Estilos del contenido principal */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: rgb(192, 54, 17); /* Rojo ladrillo */
+}
+
+/* Estilos del carrusel */
+.carousel {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img {
+    width: 33.333%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+/* Estilos del formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: rgb(192, 54, 17); /* Rojo ladrillo */
+}
+
+input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #969696; /* Gris medio */
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgb(192, 54, 17); /* Rojo ladrillo */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff; /* Blanco */
+    color: rgb(192, 54, 17); /* Rojo ladrillo */
+    border: 1px solid rgb(192, 54, 17); /* Rojo ladrillo */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #969696; /* Gris medio */
+    text-align: center;
+    padding: 1rem 0;
+    color: rgb(192, 54, 17); /* Rojo ladrillo */
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+}
